@@ -1,0 +1,77 @@
+.section-header{
+    position: relative;
+    height: 100vh;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(255,0,127,.4), rgb(255,0,127)), url("../assets/backgrounds/person_1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__see-box{
+        position: absolute;
+
+        background-color: var(--color-primary-white);
+        padding: 3rem;
+        bottom: 5rem;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.section-about{
+    padding: 10rem 5rem;
+
+    &__text-box{
+        margin-bottom: var(--gutter-horizontal);
+    }
+
+    &__picture{
+        height: 30rem;
+
+        margin-bottom: var(--gutter-horizontal);
+    }
+}
+
+.section-undertake{
+    background-color: var(--color-primary-rhod);
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    background-color: var(--color-secondary-grey);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & > *:not(:last-child){
+        margin-bottom: 4rem;
+    }
+
+    .social-media{
+        list-style: none;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more-about{
+        display: flex;
+        flex-direction: column;
+        
+        & > *:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}

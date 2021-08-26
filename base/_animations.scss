@@ -1,0 +1,25 @@
+@keyframes tremer{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    20%{
+        transform: rotateZ(10deg);
+    }
+
+    40%{
+        transform: rotateZ(-5deg);
+    }
+
+    50%{
+        transform: rotateZ(3deg);
+    }
+
+    55%{
+        transform: rotateZ(-1deg);
+    }
+
+    60%{
+        transform: rotateZ(0deg);
+    }
+}

@@ -1,0 +1,70 @@
+.card{
+    height: 50rem;
+    width: 35rem;
+    background-color: var(--color-primary-white);
+    position: relative;
+    
+
+    &:hover{
+        animation: tremer 1s ease;
+    }
+
+    &__picture{
+        height: 50%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        -webkit-background-blend-mode: screen;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+
+        &--1{
+            background-color: var(--color-secondary-blue);
+            background-image: url("../assets/pictures/favo_empreendedor.png");
+        }
+
+        &--2{
+            background-color: var(--color-secondary-green);
+            background-image: url("../assets/pictures/favo_ponto.png");
+        }
+
+        &--3{
+            background-color: var(--color-secondary-yellow);
+            background-image: url("../assets/pictures/favo_entrega.png");
+        }
+    }
+
+    &__heading{
+        position: absolute;
+        right: 0;
+        top: 20rem;
+        width: 75%;
+
+        &-span{
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+
+            &--1{
+                background-color: var(--color-secondary-blue);
+            }
+    
+            &--2{
+                background-color: var(--color-secondary-green);
+            }
+    
+            &--3{
+                background-color: var(--color-secondary-yellow);
+            }
+        }
+    }
+
+    &__description{
+        height: 50%;
+        padding: 0 4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

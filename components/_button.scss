@@ -1,0 +1,23 @@
+.button{ 
+    &:link,
+    &:visited {
+        color: var(--color-primary-white);
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+
+        position: relative;
+        display: inline-block;
+
+        transition: all .2s ease;
+    }
+
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+
+    &:active{
+        transform: translateY(.1rem);
+    }
+}

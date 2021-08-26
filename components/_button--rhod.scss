@@ -1,0 +1,16 @@
+.button--rhod{
+    &:link,
+    &:visited{
+        background-color: var(--color-primary-rhod);
+        color: var(--color-primary-white);
+        padding: 1rem 3rem;
+    }
+
+    &:hover{
+        box-shadow: 0rem 0.5rem 3rem rgba(56, 0, 107, .5);
+    }
+
+    &:active{
+        box-shadow: 0rem 0.5rem 2rem rgba(56, 0, 107, .3);
+    }
+}

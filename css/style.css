@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;800&display=swap");
+:root {
+  --color-primary-rhod: #FE007F;
+  --color-primary-violet: #38006B;
+  --color-primary-white: #FFFFFF;
+  --color-secondary-grey: #E6E6E6;
+  --color-secondary-yellow: #FCCA20;
+  --color-secondary-green: #7DC268;
+  --color-secondary-blue: #008CC4; }
+
+:root {
+  --font-size-default: 1.8rem;
+  --gutter-vertical: 8rem;
+  --gutter-horizontal: 8rem; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: inherit;
+  background-color: var(--color-primary-white); }
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-primary-white); }
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 400; }
+
+.heading-secondary {
+  font-size: 3rem;
+  color: var(--color-primary-violet);
+  font-weight: 700; }
+
+.heading-tertiary {
+  font-size: 3rem;
+  color: var(--color-primary-white);
+  font-weight: 300; }
+
+.heading-paragraph {
+  font-size: 2rem; }
+
+.section-header__see-box {
+  color: var(--color-primary-rhod);
+  font-size: 2rem;
+  font-weight: 700; }
+
+.section-about__text {
+  font-size: 1.8rem;
+  color: var(--color-primary-violet);
+  font-weight: 400; }
+
+.card {
+  text-align: right; }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 5.5rem; }
+  .card__description {
+    font-size: var(--font-size-default);
+    color: var(--color-primary-violet); }
+
+.footer {
+  text-align: center;
+  font-size: 1.4rem; }
+  .footer__item {
+    text-decoration: none;
+    color: var(--color-primary-violet);
+    font-weight: 700; }
+  .footer .legal__item {
+    color: var(--color-primary-rhod);
+    font-weight: 400; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-center {
+  text-align: center; }
+
+.margin-bottom-small {
+  margin-bottom: 4rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 8rem; }
+
+.margin-bottom-large {
+  margin-bottom: 12rem; }
+
+.margin-top-small {
+  margin-top: 4rem; }
+
+.margin-top-medium {
+  margin-top: 8rem; }
+
+.margin-top-large {
+  margin-top: 12rem; }
+
+@keyframes tremer {
+  0% {
+    transform: rotateZ(0deg); }
+  20% {
+    transform: rotateZ(10deg); }
+  40% {
+    transform: rotateZ(-5deg); }
+  50% {
+    transform: rotateZ(3deg); }
+  55% {
+    transform: rotateZ(-1deg); }
+  60% {
+    transform: rotateZ(0deg); } }
+
+.heading-primary {
+  max-width: 35rem; }
+
+.heading-paragraph {
+  max-width: 25rem; }
+
+.card {
+  height: 50rem;
+  width: 35rem;
+  background-color: var(--color-primary-white);
+  position: relative; }
+  .card:hover {
+    animation: tremer 1s ease; }
+  .card__picture {
+    height: 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    -webkit-background-blend-mode: screen;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover; }
+    .card__picture--1 {
+      background-color: var(--color-secondary-blue);
+      background-image: url("../assets/pictures/favo_empreendedor.png"); }
+    .card__picture--2 {
+      background-color: var(--color-secondary-green);
+      background-image: url("../assets/pictures/favo_ponto.png"); }
+    .card__picture--3 {
+      background-color: var(--color-secondary-yellow);
+      background-image: url("../assets/pictures/favo_entrega.png"); }
+  .card__heading {
+    position: absolute;
+    right: 0;
+    top: 20rem;
+    width: 75%; }
+    .card__heading-span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-color: var(--color-secondary-blue); }
+      .card__heading-span--2 {
+        background-color: var(--color-secondary-green); }
+      .card__heading-span--3 {
+        background-color: var(--color-secondary-yellow); }
+  .card__description {
+    height: 50%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.button:link, .button:visited {
+  color: var(--color-primary-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  transition: all .2s ease; }
+
+.button:hover {
+  transform: translateY(-0.5rem); }
+
+.button:active {
+  transform: translateY(0.1rem); }
+
+.button--white:link, .button--white:visited {
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-rhod);
+  padding: 1rem 3rem; }
+
+.button--white:hover {
+  box-shadow: 0rem 0.5rem 3rem rgba(56, 0, 107, 0.5); }
+
+.button--white:active {
+  box-shadow: 0rem 0.5rem 2rem rgba(56, 0, 107, 0.3); }
+
+.button--rhod:link, .button--rhod:visited {
+  background-color: var(--color-primary-rhod);
+  color: var(--color-primary-white);
+  padding: 1rem 3rem; }
+
+.button--rhod:hover {
+  box-shadow: 0rem 0.5rem 3rem rgba(56, 0, 107, 0.5); }
+
+.button--rhod:active {
+  box-shadow: 0rem 0.5rem 2rem rgba(56, 0, 107, 0.3); }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.row {
+  display: flex; }
+  .row-column {
+    flex-direction: column;
+    align-items: center; }
+    .row-column > *:not(:last-child) {
+      margin-bottom: var(--gutter-horizontal); }
+
+.section-header {
+  position: relative;
+  height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(255, 0, 127, 0.4), #ff007f), url("../assets/backgrounds/person_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .section-header__see-box {
+    position: absolute;
+    background-color: var(--color-primary-white);
+    padding: 3rem;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.section-about {
+  padding: 10rem 5rem; }
+  .section-about__text-box {
+    margin-bottom: var(--gutter-horizontal); }
+  .section-about__picture {
+    height: 30rem;
+    margin-bottom: var(--gutter-horizontal); }
+
+.section-undertake {
+  background-color: var(--color-primary-rhod);
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer {
+  background-color: var(--color-secondary-grey);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .footer > *:not(:last-child) {
+    margin-bottom: 4rem; }
+  .footer .social-media {
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+  .footer .more-about {
+    display: flex;
+    flex-direction: column; }
+    .footer .more-about > *:not(:last-child) {
+      margin-bottom: 2rem; }
