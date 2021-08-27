@@ -1,0 +1,110 @@
+.section-header{
+    position: relative;
+    height: 100vh;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(255,0,127,.4), rgb(255,0,127)), url("../assets/backgrounds/person_1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__see-box{
+        position: absolute;
+
+        background-color: var(--color-primary-white);
+        padding: 3rem 10rem;
+        bottom: 5rem;
+        left: 0;
+        width: 60%;
+
+        display: flex;
+        justify-content: flex-end;
+
+        transition: all .2s ease;
+
+        &:hover{
+            transform: scaleX(1.05);
+        }
+    }
+}
+
+.section-about{
+    padding: 10rem 5rem;
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        & > *:not(:last-child){
+            margin-right: var(--gutter-vertical);
+        }
+    }
+
+    &__text-box{
+        & > *:not(:last-child){
+            margin-bottom: var(--gutter-horizontal);
+        }
+    }
+
+    &__picture{
+        height: 20rem;
+        width: 33rem;
+    }
+}
+
+.section-undertake{
+    background-color: var(--color-primary-rhod);
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+
+        & > *:not(:last-child){
+            margin-right: var(--gutter-vertical);
+        }
+    }
+}
+
+.footer{
+    background-color: var(--color-secondary-grey);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & > *:not(:last-child){
+        margin-bottom: 4rem;
+    }
+
+    .social-media{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+    }
+
+    .more-about{
+        display: flex;
+        align-items: center;
+        
+        
+        & > *:not(:last-child){
+            margin-right: var(--gutter-vertical);
+        }
+    }
+}
