@@ -1,6 +1,6 @@
 .card{
     height: 50rem;
-    width: 35rem;
+    max-width: 40rem;
     background-color: var(--color-primary-white);
     position: relative;
     
@@ -10,7 +10,7 @@
     }
 
     &__picture{
-        height: 50%;
+        height: 60%;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         -webkit-background-blend-mode: screen;
@@ -37,8 +37,9 @@
     &__heading{
         position: absolute;
         right: 0;
-        top: 20rem;
+        top: 23rem;
         width: 75%;
+
 
         &-span{
             padding: 1rem 1.5rem;
@@ -46,21 +47,21 @@
             box-decoration-break: clone;
 
             &--1{
-                background-color: var(--color-secondary-blue);
+                background-image: linear-gradient(to right bottom, var(--color-secondary-blue), rgba(255,0,127,.9));
             }
     
             &--2{
-                background-color: var(--color-secondary-green);
+                background-image: linear-gradient(to right bottom, var(--color-secondary-green), rgba(255,0,127,.9));;
             }
     
             &--3{
-                background-color: var(--color-secondary-yellow);
+                background-image: linear-gradient(to right bottom, var(--color-secondary-yellow), rgba(255,0,127,.9));;
             }
         }
     }
 
     &__description{
-        height: 50%;
+        height: 40%;
         padding: 0 4rem;
 
         display: flex;
