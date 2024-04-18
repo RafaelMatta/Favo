@@ -1,39 +1,39 @@
-@keyframes tremer{
-    0%{
+@keyframes tremer {
+    0% {
         transform: rotateZ(0deg);
     }
 
-    20%{
-        transform: rotateZ(10deg);
-    }
-
-    40%{
-        transform: rotateZ(-5deg);
-    }
-
-    50%{
+    20% {
         transform: rotateZ(3deg);
     }
 
-    55%{
+    40% {
+        transform: rotateZ(-3deg);
+    }
+
+    50% {
+        transform: rotateZ(2deg);
+    }
+
+    55% {
         transform: rotateZ(-1deg);
     }
 
-    60%{
+    60% {
         transform: rotateZ(0deg);
     }
 }
 
 @keyframes pulsar {
-    0%{
+    0% {
         transform: scale(1);
     }
-    
-    50%{
-        transform: scale(1.1);
+
+    50% {
+        transform: scale(1.03);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 }

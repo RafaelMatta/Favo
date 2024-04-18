@@ -1,16 +1,14 @@
-@media only screen and (max-width: $bp-largest) {
-    
-}
+@media only screen and (max-width: $bp-largest) {}
 
-@media only screen and (max-width: $bp-large){
-    .section-undertake{
+@media only screen and (max-width: $bp-large) {
+    .section-undertake {
 
-        &__row{
+        &__row {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            & > *:not(:last-child){
+            &>*:not(:last-child) {
                 margin-right: 0 !important;
                 margin-bottom: var(--gutter-horizontal);
             }
@@ -19,47 +17,47 @@
 
 }
 
-@media only screen and (max-width: $bp-medium){
-    .toggle-desktop{
+@media only screen and (max-width: $bp-medium) {
+    .toggle-desktop {
         display: none;
     }
 
-    .toggle-mobile{
+    .toggle-mobile {
         display: inline-block;
     }
 
-    .section-about__box{
+    .section-about__box {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: var(--gutter-horizontal);
     }
 
-    .section-about__text-box{
+    .section-about__text-box {
         margin-right: 0 !important;
     }
 
-    .section-header .section-header__see-box{
+    .section-header .section-header__more-box {
         width: 100%;
         justify-content: center;
     }
 
-    .more-about{
+    .more-about {
         display: flex;
         flex-direction: column;
-        
-        & > *:not(:last-child){
+
+        &>*:not(:last-child) {
             margin-bottom: 2rem;
         }
     }
 
-    .footer{
-        .more-about{
+    .footer {
+        .more-about {
             display: flex;
             flex-direction: column;
             align-items: center;
-            
-            & > *:not(:last-child){
+
+            &>*:not(:last-child) {
                 margin-right: 0 !important;
                 margin-bottom: 3rem;
             }
@@ -67,24 +65,24 @@
     }
 }
 
-@media only screen and (max-width: $bp-small){
-    .card__heading-span{
+@media only screen and (max-width: $bp-small) {
+    .card__heading-span {
         font-size: 2.4rem;
     }
 
-    .heading-primary{
+    .heading-primary {
         font-size: 4.5rem;
         max-width: 28rem;
     }
 
-    .section-header__see-text{
+    .section-header__more-text {
         font-size: 1.8rem;
         text-align: center;
     }
 }
 
-@media only screen and (max-width: $bp-smallest){
-    .card__heading-span{
+@media only screen and (max-width: $bp-smallest) {
+    .card__heading-span {
         font-size: 2rem;
     }
 }

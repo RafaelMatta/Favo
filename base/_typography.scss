@@ -1,76 +1,76 @@
-html{
+html {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: var(--color-primary-white);
 }
 
-.heading-primary{
-    font-size:6rem;
+.heading-primary {
+    font-size: 6rem;
     font-weight: 400;
 }
 
-.heading-secondary{
+.heading-secondary {
     font-size: 3rem;
     color: var(--color-primary-violet);
     font-weight: 700;
 }
 
-.heading-tertiary{
+.heading-tertiary {
     font-size: 3rem;
     color: var(--color-primary-white);
     font-weight: 300;
 }
 
-.heading-paragraph{
+.heading-paragraph {
     font-size: 2rem;
 }
 
-.section-header__see-text{
+.section-header__more-text {
     text-decoration: none;
     color: var(--color-primary-rhod);
     font-size: 2rem;
     font-weight: 700;
+    padding: 3rem 0;
 }
 
-.section-about__text{
+.section-about__text {
     font-size: 1.8rem;
     color: var(--color-primary-violet);
     font-weight: 400;
 }
 
-.card{
+.card {
     text-align: right;
 
-    
-    &__heading{
+
+    &__heading {
         font-size: 2.8rem;
         font-weight: 700;
         line-height: 4.5rem;
-        
+
     }
 
-    &__description{
+    &__description {
         font-size: var(--font-size-default);
         color: var(--color-primary-violet);
     }
 }
 
-.footer{
+.footer {
     text-align: center;
-    
 
-    &__item{
+
+    &__item {
         text-decoration: none;
         color: var(--color-primary-violet);
         font-weight: 700;
         font-size: 1.8rem;
     }
 
-    .legal__item{
+    .legal__item {
         font-size: 1.4rem;
         color: var(--color-primary-rhod);
         font-weight: 400;
-        
+
     }
 }
-
