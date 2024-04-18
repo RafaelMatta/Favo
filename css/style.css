@@ -391,7 +391,7 @@ html {
   transition: all 0.2s ease;
 }
 .section-header__more-box:hover {
-  width: 65%;
+  width: calc(60% + 1rem);
 }
 
 .section-about {
